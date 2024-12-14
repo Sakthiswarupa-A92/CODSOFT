@@ -1,29 +1,19 @@
-let inputbox = document.getElementById('inputarea')
-let buttons = document.querySelectorAll('buttons')
+// add class navbarDark on navbar scroll
+const header = document.querySelector('.navbar');
+console.log(header)
+window.onscroll = function() {
+    const top = window.scrollY;
+    if(top >=400) {
+        header.classList.add('navbarDark');
+    }
+    else {
+        header.classList.remove('navbarDark');
+    }
+}
+// collapse navbar after click on small devices
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarSupportedContent')
 
-let string = ''
-buttons.forEach(element =>{
-	element.addEventListener('click',(b)=>{
-		if(b.target.innerText == '='){
-			string = String(eval(string))
-			inputBox.value = string;
-		}
-		else if(b.target.innerTest == 'AC'){
-			string = ''
-			inputBox.value = string;
-		}
-		else if(b.target.innerTest == 'C'){
-			string = String.substring(0,string.length-1);
-			inputBox.value = string;
-		}
-		else if(b.target.innerTest == 'plusminusButton'){
-			string = String(-eval(string))
-			inputBox.value = string;
-		}
-		else {
-			string += b.target.innerTest
-			inputBox.value = string;
-		}
-
-	})
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
 })

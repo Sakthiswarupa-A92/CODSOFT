@@ -1,50 +1,258 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width,initial scale=1.0">
-    <title>Basic Calculator</title>
-    <link rel="stylesheet" href="BasicCalculator.css">
-    <link rel="stylesheet" type="text/css" href="">
+  <title>Portfolio Website-Sakthi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="=container">
-    <div class="calculator">
-        <div class="display">
-            <input type="text" id="inputarea" value="0" placeholder="0" disabled>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sakthiswarupa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
         </div>
-        <div class="row">
-            <button type="button" class="operator">AC</button>
-            <button type="button" class="operator">%</button>
-            <button type="button" class="operator">C</button>
-            <button type="button" class="operator">/</button>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's me Sakthiswarupa</h2>
+                <p class="hero_desc">I am a Web Developer</p>
+            </div>
+            </div>
         </div>
-        <div class="row">
-            <button type="button">7</button>
-            <button type="button">8</button>
-            <button type="button">9</button>
-            <button type="button" class="operator">*</button>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-3">
+                <div class="col-lg-3">
+                    <img src="L:\2022-12-31-16-24-36-862.jpg" class="round-image" alt="Profile Picture of Sakthiswarupa" width="300px" height="300px">
+                </div>
+
+                <div class="col-lg-9 sakthiswarupa_p">
+                    <p class="sakthiswarupa_p"> I am Sakthiswarupa recently graduationin Apr-2023 in Computer Science stream with 7.92 CGPA .I am an Enthusiastic and aspiring person looking for job. Have Knowledge in Python, Django, Java, HTML,CSS and JavaScript, Mysql, DBMS, GIT & GitHub, Data science, Machine Learning, Artificial Intelligence and beginner C++.Strong ability to communicate with clients and ability to express ideas clearly and concisely.Continuous learner of new technologies, strategies, and tools.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Thammireddipalli Sakthiswarupa,recently graduated in Apr-2023 in Computer Science stream with 7.92 CGPA...</li>
+                                <li>Age: 22</li>
+                                <li>Occupation: Software Engineer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- projetcs section-->
+    <section id="projetcs">
+        <div class="container mt-3">
+            <h1 class="text-center">Projects</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="project portfolioContent">
+                        <img class="project-img-top" src="C:\Users\sswar\OneDrive\Pictures\Saved Pictures\1-s2.0-S0010482520301621-fx1.jpg" alt="Project image" style="width: auto;">
+                        <div class="project-bodyy">
+                            <h4 class="project-title">ATMSimulator</h4>
+                            <p class="project-textt">I contributed to multiple departments at L&T Construction B&F IC's prestigious Prestige Finsbury Park Residential Housing Project. Working on this site was a valuable learning experience, as it involved novel construction practices and challenges.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/equifax.jpeg" alt="Card image" style="width:auto">
+                        <div class="card-bodyy">
+                            <h4 class="card-title">System Engineer</h4>
+                            <p class="card-time">January 2022 – October 2023</p>
+                            <p class="card-textt">Worked for Equifax Inc at Commercial Operation L2 support team as a Production Support and analyst. It is a Credit bureau company that collects data from Various sources and provides consumer credit information. The tech stack used for this is UNIX Shell scripting. As part of this I have built scripts for doing sanity on servers which replaced 40% of manual work on server sanity checks</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/Jpmorgan.jpg" alt="Card image" style="width:auto">
+                        <div class="card-bodyy">
+                            <h4 class="card-title">Developer</h4>
+                            <p class="card-time">Working</p>
+                            <p class="card-textt">Working for JPMorgan Chase & co at CMOD-DCM team as a shell scripting developer. CMOD is IBM product that offers Archive services to the customers. 
+                                The tech stacks used for this are JAVA, Python, Perl script and mostly Shell script.
+                                My main focus within this project has been on developing the common module scripts
+                                and script for one of the most complex processes Retention Dispatcher. Thanks to this script, 80% of manual tasks are automated, eliminating human errors entirely. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section><br>
+
+    <!-- Skills section-->
+    <section id="technologies">
+        <div class="container">
+            <h1 class="text-center">Skills</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="skills">
+                        <h4>HTML</h4>
+                        <img class="2022-12-31-16-24-36-862.jpg" alt="Card image" style="width:30%">
+                        <p>HTML (HyperText Markup Language) is the standard language for creating web pages and applications. It structures content using elements like headings, paragraphs, links, and images. HTML uses tags to define the layout and presentation of the content on a webpage.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="skills">
+                        <h4>CSS</h4>
+                        <img class="card-img-top" src="C:\Users\sswar\OneDrive\Pictures\Saved Pictures\css.png" alt="Card image" style="width:30%">
+                        <p>CSS (Cascading Style Sheets) is used to control the layout and design of web pages. It defines styles for elements such as colors, fonts, spacing, and positioning. CSS allows for responsive design, ensuring websites look good on various devices. It works alongside HTML to separate content from presentation for cleaner, more efficient code.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="skills">
+                        <h4>JavaScript</h4>
+                        <img class="card-img-top" src="C:\Users\sswar\OneDrive\Pictures\Saved Pictures\js.webp" alt="Card image" style="width:40%">
+                        <p>JavaScript is a versatile, high-level programming language primarily used for creating interactive web pages. It allows developers to manipulate HTML and CSS to update content dynamically without reloading the page. JavaScript supports event-driven programming, making it essential for responsive and interactive elements</p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="skills">
+                            <h4>Python</h4>
+                            <img class="card-img-top" src="C:\Users\sswar\OneDrive\Pictures\Saved Pictures\python.jpeg"alt="Card image" style="width:30%">
+                            <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python has a vast standard library, making it ideal for rapid development across fields like web development, data analysis, artificial intelligence, and more. </p>
+                            <!----<div class="card-body">
+                                <h4 class="card-title">Blog App</h4>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-success">Link</a>
+                                </div>
+                            </div> --->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="skills">
+                            <h4>Java</h4>
+                            <img class="card-img-top" src="C:\Users\sswar\OneDrive\Pictures\Saved Pictures\java" alt="Card image" style="width:40%">
+                            <p>Java is a high-level, object-oriented programming language designed for building platform-independent applications. It uses the Java Virtual Machine (JVM) to run code, ensuring compatibility across various platforms. Java is widely used for developing web applications, mobile apps, and large-scale enterprise systems. Its rich set of libraries, tools, and frameworks makes it a popular choice for developers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="skills">
+                            <h4>C++</h4>
+                            <img class="card-img-top" src="C:\Users\sswar\OneDrive\Pictures\Saved Pictures\c++.png" alt="Card image" style="width:30%">
+                            <p>C++ is a powerful, high-performance programming language known for its flexibility and efficiency. It supports both procedural and object-oriented programming, allowing for complex system and application development. C++ is widely used in game development, embedded systems, and performance-critical applications. Its ability to directly manipulate hardware and memory gives it an edge in low-level programming.</p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
         </div>
-        <div class="row">   
-            <button type="button">4</button>
-            <button type="button">5</button>
-            <button type="button">6</button>
-            <button type="button" class="operator">-</button>
-            
-        <div class="row">    
-            <button type="button">1</button>
-            <button type="button">2</button>
-            <button type="button">3</button>
-            <button type="button" class="operator">+</button>
-            
+
+    </section><br>
+
+    <!--resume section--->
+    <section id="resume">
+    <div class="container">
+        <h1 class="text-center">Resume</h1>
+        <p class="text-center">
+            <h5>Here is my professional resume. Feel free to download or view it online.</h5>
+        </p>
+        <div class="text-center">
+            <!-- Resume Preview using Google Docs Viewer -->
+            <iframe src="https://docs.google.com/viewer?url=C:/Users/sswar/Downloads/T%20Sakthiswarupa.pdf&embedded=true" width="600" height="500" style="border: none;"></iframe>
         </div>
-        <div class="row">    
-            <button type="button">.</button>
-            <button type="button">0</button>
-            <button type="button" id="plusminusButton">+/-</button>
-            <button type="button" id="equalsToButton">=</button>
+        <div class="text-center mt-4">
+            <!-- Download Button -->
+            <a href="C:/Users/sswar/Downloads/T%20Sakthiswarupa.pdf" download class="btn btn-success">Download Resume</a>
         </div>
-        
     </div>
-    <script src="BasicCalculator.js"></script>    
+</section><br>
+
+    <!-- contact section-->
+     <!----- contact ------->
+     <div id="contact">
+        <div class="container">
+            <h1 class="text-center">Contact</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact me:-</h2>
+                    <p><i class="fas fa-paper-plane"></i>sswarupa390@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9100052181</p>
+                    <p><i class="fa-phone-square-alt"></i>Reached me on</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sakthiswarupa/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/swarupasakthi/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="https://script.google.com/macros/s/AKfycbzKyEpkQB53mCk0VfRnWLAJg2wy_Gt1_qmJc9cXVUpgX-fVk9sLnw-IkiR7-2KEBg4n/exec" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Adress" required><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" placeholder="Your Message"></textarea><br>
+                        <input class="btn btn2" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="main">
+            <p>
+                <center>Copyright @ 2024 
+                    <a href="">Sakthi@swarupa</a><br>
+                    <a href="https://www.linkedin.com/in/sakthiswarupa/">Linkedin</a><br>
+                    <a href="https://github.com/Sakthiswarupa-A92/CODSOFT">GitHub</a>
+                </center>
+            </p>
+        </div>
+    </footer>
+   <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
 </body>
+
 </html>
